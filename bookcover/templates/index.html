@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Back Cover</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="cover">
+
+        <header class="top">
+            <p class="tagline">A NOVEL OF MYSTERY AND DISCOVERY</p>
+            <h1>The Silent Horizon</h1>
+        </header>
+
+        <section class="blurb">
+            <p class="hook">Some journeys begin with a map. Hers began with a secret.</p>
+            <p>
+                When Maya inherits a weathered journal from a grandfather she never met,
+                she finds coordinates to an island that appears on no chart. As she follows
+                the clues across oceans and old cities, she learns that the truth is
+                buried deeper than treasure, and that someone else is searching too.
+            </p>
+            <p>
+                A gripping tale of family, courage, and the question that haunts every
+                traveller: <em>what are you willing to leave behind to find the truth?</em>
+            </p>
+        </section>
+
+        <section class="reviews">
+            <blockquote>
+                "A page-turner from the first line to the last."
+                <cite>The Daily Reader</cite>
+            </blockquote>
+            <blockquote>
+                "Atmospheric, moving and impossible to put down."
+                <cite>Book Lovers Weekly</cite>
+            </blockquote>
+        </section>
+
+        <section class="author">
+           {% load static %}
+
+<img src="{% static 'images/art.jpg' %}"
+     alt="Author Photo"
+     class="author-photo">
+            <div>
+                <h3>About the Author</h3>
+                <p>
+                    <strong>Arjun Mehta</strong> is an award-winning novelist and travel
+                    writer. He lives in Chennai, where he writes by the sea.
+                </p>
+            </div>
+        </section>
+
+        <footer class="bottom">
+            <div class="publisher">
+                <p class="pub-name">HORIZON PRESS</p>
+                <p>www.horizonpress.com</p>
+                <p class="price">Price: ₹399</p>
+            </div>
+            <div class="barcode"></div>
+        </footer>
+
+    </div>
+</body>
+</html>

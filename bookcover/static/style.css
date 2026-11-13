@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2b2b2b;
+    font-family: Georgia, "Times New Roman", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.cover {
+    width: 480px;
+    background: linear-gradient(160deg, #0b1d3a 0%, #13315c 60%, #0b1d3a 100%);
+    color: #f4efe6;
+    padding: 40px 36px;
+    border: 6px solid #c9a227;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
+}
+
+/* Header */
+.top {
+    text-align: center;
+    margin-bottom: 28px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid #c9a227;
+}
+
+.tagline {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #c9a227;
+    margin-bottom: 10px;
+}
+
+.top h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Blurb */
+.blurb {
+    margin-bottom: 24px;
+    line-height: 1.7;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.blurb p {
+    margin-bottom: 14px;
+}
+
+.hook {
+    font-size: 19px;
+    font-style: italic;
+    color: #c9a227;
+    text-align: center;
+}
+
+/* Reviews */
+.reviews {
+    margin-bottom: 24px;
+}
+
+blockquote {
+    border-left: 4px solid #c9a227;
+    padding: 8px 14px;
+    margin-bottom: 12px;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+cite {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    font-style: normal;
+    color: #c9a227;
+}
+
+/* Author */
+.author {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 0;
+    border-top: 1px solid rgba(201, 162, 39, 0.5);
+    border-bottom: 1px solid rgba(201, 162, 39, 0.5);
+    margin-bottom: 24px;
+}
+
+.author img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #c9a227;
+}
+
+.author h3 {
+    color: #c9a227;
+    margin-bottom: 6px;
+}
+
+.author p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* Footer */
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.publisher {
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.pub-name {
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #c9a227;
+}
+
+.price {
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+/* Barcode drawn with pure CSS */
+.barcode {
+    width: 130px;
+    height: 70px;
+    background-color: #fff;
+    background-image: repeating-linear-gradient(
+        90deg,
+        #000 0, #000 2px,
+        #fff 2px, #fff 4px,
+        #000 4px, #000 5px,
+        #fff 5px, #fff 8px,
+        #000 8px, #000 11px,
+        #fff 11px, #fff 12px
+    );
+    border: 6px solid #fff;
+}
